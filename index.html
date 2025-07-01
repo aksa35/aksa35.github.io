@@ -5,47 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>타임캡슐 | 미래로 보내는 선물</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: white;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
     header {
+      padding: 80px 20px 40px;
       text-align: center;
-      padding: 50px 20px;
-      background: linear-gradient(120deg, #ffefba, #ffffff);
     }
+
     header h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
+      font-weight: 400;
+      letter-spacing: -1px;
       margin-bottom: 10px;
     }
-    nav {
-      text-align: center;
-      margin-bottom: 30px;
+
+    header p {
+      font-size: 1em;
+      color: #888;
     }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin: 40px 0;
+    }
+
     nav a {
-      margin: 0 15px;
       text-decoration: none;
       color: #444;
-      font-weight: bold;
+      font-size: 0.95em;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s ease;
     }
+
+    nav a:hover {
+      border-color: #aaa;
+    }
+
     section {
-      max-width: 800px;
+      max-width: 720px;
       margin: 0 auto 60px;
-      padding: 0 20px;
+      padding: 0 24px;
+      text-align: center;
     }
+
     section h2 {
-      font-size: 1.8em;
-      color: #111;
-      margin-bottom: 15px;
+      font-size: 1.5em;
+      font-weight: 500;
+      margin-bottom: 16px;
     }
+
+    section p {
+      color: #555;
+      font-size: 1em;
+      line-height: 1.8;
+    }
+
     footer {
       text-align: center;
-      font-size: 0.9em;
-      padding: 30px;
-      background: #eee;
-      color: #777;
+      font-size: 0.8em;
+      color: #aaa;
+      padding: 60px 20px;
+      background: #fafafa;
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
@@ -65,29 +110,44 @@
 
   <section id="about">
     <h2>소개</h2>
-    <p>타임캡슐은 소중한 기억을 봉인하고 미래에 전달해주는 서비스입니다. 고객님의 편지를 예쁘게 포장해, 원하는 미래의 날짜에 정확히 배달해드립니다.</p>
+    <p>
+      타임캡슐은 당신의 감정을 담아<br/>
+      정해진 미래의 날짜에 전달하는 감성 택배 서비스입니다.<br/>
+      사랑, 다짐, 고백, 기억을 예쁘게 포장해<br/>
+      미래의 당신 또는 누군가에게 전해드립니다.
+    </p>
   </section>
 
   <section id="review">
     <h2>리뷰</h2>
-    <p>“10년 뒤에 딸에게 보낸 편지를 받았어요. 감동이었습니다.” – 김민지</p>
-    <p>“졸업식에 친구들이 다 같이 캡슐을 열었어요. 울었어요.” – 박재현</p>
+    <p>
+      “잊고 있던 내 편지를 받아보는 순간, 울컥했어요.”<br/>
+      “졸업식에 친구들과 함께 열었어요. 전부 눈물바다였죠.”<br/>
+      “시간을 담아 보낸다는 이 아이디어, 너무 좋았어요.”
+    </p>
   </section>
 
   <section id="buy">
     <h2>구매</h2>
-    <p><strong>타임캡슐 패키지</strong>: 29,000원</p>
-    <p>포장지 + 보관 + 미래 배송 포함<br />결제는 스마트스토어에서 가능합니다.</p>
+    <p>
+      🎁 타임캡슐 패키지 – 29,000원<br/>
+      포장 + 보관 + 미래 배송 포함<br/>
+      <br/>
+      👉 <a href="https://smartstore.naver.com/타임캡슐" target="_blank">스마트스토어 바로가기</a>
+    </p>
   </section>
 
   <section id="contact">
     <h2>문의</h2>
-    <p>카카오톡 채널: @타임캡슐</p>
-    <p>이메일: timecapsule@example.com</p>
+    <p>
+      💌 카카오톡 채널: @타임캡슐<br/>
+      📧 이메일: timecapsule@example.com<br/>
+      📸 인스타그램: @timecapsule.official
+    </p>
   </section>
 
   <footer>
-    © 2025 타임캡슐. All rights reserved.
+    ⓒ 2025 타임캡슐. all rights reserved.
   </footer>
 
 </body>
